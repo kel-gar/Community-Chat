@@ -34,9 +34,6 @@ class RoomList extends Component {
      e.preventDefault();
      this.createRoom(this.state.value);
      this.setState({ value: ''});
-     // if (!this.state.value) { return }
-     // const newRoom = { name: this.state.value, isCompleted: false };
-     // this.setState({ rooms: [...this.state.rooms, newRoom], value: ''});
    }
 
     render() {
@@ -44,12 +41,12 @@ class RoomList extends Component {
         <div id="roomlist">
           {this.state.rooms.map( (room, index) =>
             <div key={index}>
-              <ul>{room.name}</ul>
+              <button value={room.name} onClick={ (e) => this.props.setActiveRoom(e) }>{room.name}</button>
             </div>
           )}
           <form onSubmit={ this.handleSubmit }>
             <label>
-              New Room Name:
+              Create Room:
               <input type="text" value={ this.state.value } onChange={ this.handleChange } />
             </label>
               <input type="submit" value="Submit" />
