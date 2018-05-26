@@ -22,6 +22,7 @@ class MessageList extends Component {
 
    createMessage (message) {
      this.roomsRef.push({
+      username: this.props.activeUser,
       content: this.state.value,
       roomId: this.props.activeRoom,
       sentAt: this.props.firebase.database.ServerValue.TIMESTAMP
