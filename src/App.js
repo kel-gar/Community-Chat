@@ -5,7 +5,6 @@ import RoomList from './components/RoomList';
 import MessageList from './components/MessageList';
 import User from './components/User';
 
-// Initialize Firebase
   var config = {
     apiKey: "AIzaSyA1r0vt3YrLUtV9gm0YGOTTJqM99VkPK6M",
     authDomain: "kg-bloc-chat.firebaseapp.com",
