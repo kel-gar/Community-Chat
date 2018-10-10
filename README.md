@@ -1,8 +1,6 @@
 # Community-Chat
 #### a real-time chat app built with ReactJS
 
-![screenshot](/src/img/bloc_chat_react_screenshot.jpg)
-
 ***
 
 ##### What's used:
