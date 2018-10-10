@@ -1,5 +1,5 @@
 # Community-Chat
-#### a real-time chat app built with ReactJS
+#### A real-time chat app built with ReactJS
 
 ***
 
